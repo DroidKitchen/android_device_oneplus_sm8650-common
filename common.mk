@@ -145,6 +145,9 @@ PRODUCT_PACKAGES += \
     OPlusSettingsResPhoneCommon
 endif
 
+# Dolby
+$(call inherit-product-if-exists, vendor/sony/dolby/sonydolby.mk)
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
